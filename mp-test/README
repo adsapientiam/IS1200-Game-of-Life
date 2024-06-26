@@ -1,0 +1,22 @@
+Recognition: As per recommendation, this project uses labb3's content as a basis. 
+
+How to compile and upload the project's code: 
+WINDOWS
+1) Have installed make and MSYS/WSL, open the CLI
+2) Enter the build enviroment by typing ". /opt/mcb32tools/environment" (without quotation marks)
+3) Navigate to the project folder with "cd" ("IS1200-expo/mp-test" is where you should be)
+4) Type "make" in the terminal to compile the code
+5) Connect the UNO32 to computer via USB
+6) Type "make install TTYDEV=/dev/ttySX" in the terminal to upload the code to the Uno32. You will have to identify which port (S1, S2, etc) the Uno32 is connected to and replace the X with the corresponding number. Just trying numbers 1-9 should work well too. 
+
+macOS
+1) Install MCB32tools
+2) Open the MCB32Tools terminal. Note it opens minimized, so you have to click the icon again.
+3) Navigate to the project folder with "cd" ("IS1200-expo/mp-test" is where you should be)
+4) Write "make" in the terminal to compile the code
+5) Connect the UNO32 to your mac via USB
+6) In a separate Terminal window of your choice (can not be done via MCB32tools CLI) type "ls /dev/" to list connected devices. The Uno32 will show up in the list as "tty.usbserial-XXXXXXXX" where the last 8 characters will depend for each machine.
+7) Type "make install TTYDEV=/dev/tty.usbserial-XXXXXXXX" in the terminal (replace the X's with whatever you found in step 6!) to upload the code to the Uno32
+
+Linus
+1) you got this :D
